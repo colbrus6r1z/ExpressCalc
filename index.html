@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <form id="calc-form">
+            <div class="form-group">
+                <label for="nums">Enter numbers (comma-separated):</label>
+                <input 
+                    type="text" 
+                    id="nums" 
+                    name="nums" 
+                    placeholder="e.g., 1,2,3,4,5" 
+                    required
+                >
+            </div>
+            <h2>Choose operation:</h2>
+            <select name="operation">
+                <option value="mean">Mean</option>
+                <option value="median">Median</option>
+                <option value="mode">Mode</option>
+            </select>
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="client.js"></script>
+</body>
+</html>
